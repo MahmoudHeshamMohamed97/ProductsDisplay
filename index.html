@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <link  rel="stylesheet" href="css/all.min.css"/>
+    <link  rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link  rel="stylesheet" href="css/index_style.css"/>
+
+
+</head>
+<body>
+
+
+  <section class="welcomeMessage p-5">
+    <div class="container text-center">
+      <h1 class="mb-3">Welcome to <span>Productatna</span> Website</h1>
+      <p>This Website is a demo Website to train on js</p>
+    </div>
+  </section>
+
+  <section class="addProducts mt-2">
+    <div class="container p-5">
+      <h2 class="mb-5">Welcome in add Product Section</h2>
+
+      <div class="form-group">
+        <label>Product Name:</label>
+        <input type="text" name="ProName" id="productName" placeholder="Product Name" class="form-control" />
+        <div class="alert alert-danger text-center d-none" id="alertName" >Name Should start with Capital character and ends without any number</div>
+      </div>
+      <div class="form-group">
+        <label>Product Price:</label>
+        <input type="text" name="ProPrice" id="productPrice" placeholder="Product Price" class="form-control" />
+        <div class="alert alert-danger text-center d-none" id="alertPrice" >Price Should be only a number maximum 9999</div>
+      </div>
+      <div class="form-group">
+        <label>Product Description: (Optional)</label>
+        <textarea class="form-control" id="productDescription" placeholder="Description is optional" ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Product Photo:</label>
+        <button class="btn btn-success ml-5" id="choosePhoto">Choose Photo</button>
+        <div class="alert alert-danger text-center d-none" id="alertPhoto" >You Should Choose Photo..</div>
+
+        <div class="layerOfChooseButton d-none">
+
+          <i class="fas fa-times-circle fa-3x"></i>
+
+          <div class="photo">
+            <i class="fas fa-arrow-alt-circle-left fa-3x" id="goLeft"></i>
+            <i class="fas fa-arrow-alt-circle-right fa-3x" id="goRight" ></i>
+          </div>
+
+          <button class="btn btn-secondary mt-4" id="confirmBtn">Confirm</button>
+
+        </div>
+
+      </div>
+
+      <button class="btn btn-primary float-right" id="addBtn" >Add Product</button>
+      <div class="clearfix"></div>
+    </div>
+  </section>
+  
+  <section class="p-5">
+    <div class="container">
+      <div class="row" id="dataDisplayed">
+        
+    </div>
+  </section>
+
+  <div class="editLayer d-none">
+    <div class="imageToEdit">
+      <img id="imageToUpdate" src="images/portfolio-3.jpg"  />
+      <button class="btn btn-primary" id="changePhotoToUpdate">Change</button>
+    </div>
+    <div class="datatoEdit">
+        <div>
+        <label >Name: </label>
+        <input type="text" id="nameUpdated" placeholder="Updated Name" />
+        <label >Price: </label>
+        <input type="text" id="priceUpdated" placeholder="Updated Price" />
+        </div>
+        <div class="w-75">
+          <button class="btn btn-warning btn-lg float-left" id="updateBtn" >Update</button>
+          <button class="btn btn-danger btn-lg float-right" id="deleteBtn" >Delete</button>
+          <div class="clearfix"></div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="messageBox d-none"></div>
+
+  
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/index.js"></script>
+    
+
+</body>
+</html>

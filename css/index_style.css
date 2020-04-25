@@ -1,0 +1,130 @@
+body{
+    background-color: yellowgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .welcomeMessage{
+    background-color: red;
+} */
+.welcomeMessage h1{
+    font-size: 3rem;
+}
+.welcomeMessage h1 span{
+    color: blue;
+    font-size: 4rem;
+}
+.welcomeMessage p{
+    font-weight: 500;
+    color: yellow;
+    transition: 0.3s all;
+}
+.welcomeMessage p:hover{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+/* .addProducts{
+} */
+.addProducts h2{
+    color: indigo;
+}
+.layerOfChooseButton{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 299;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    background-image: url('../images/portfolio-1.jpg');
+    background-size: 100% 100%;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-arrow-alt-circle-left , .fa-arrow-alt-circle-right, .fa-times-circle{
+    cursor: pointer;
+    padding: 10px;
+}
+.fa-times-circle{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+.productImage{
+    overflow: hidden;
+}
+.eachPro{
+    height: 300px;
+    width: 100%;
+    transition: 0.5s all;
+}
+.eachPro:hover{
+    transform: scale(1.15);
+}
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+.messageBox{
+    position: fixed;
+    z-index: 999;
+    bottom: 10%;
+    left: 30%;
+    right: 30%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+    padding: 20px;
+}
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+.editLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 199;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageToEdit {
+    position: relative;
+    height: 70%;
+    width: 40%;
+}
+.imageToEdit img{
+    height: 100%;
+    width: 100%;
+}
+.datatoEdit{
+    height: 70%;
+    width: 40%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#changePhotoToUpdate{
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+}
+.note{
+    color: blueviolet;
+}
